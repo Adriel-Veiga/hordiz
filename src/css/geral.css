@@ -1,0 +1,26 @@
+:root{
+    /* Variáveis de tema usadas em todo o site */
+    --fonte: 'Open Sans', sans-serif;
+    --cor-primaria: #fff5d3;
+    --cor-secundaria: #6687ff;
+    --cor-terciaria: #465fbd;
+    --gradiente: linear-gradient(90deg, var(--cor-secundaria), var(--cor-terciaria));
+}
+
+/* Reset básico e aplicação da fonte global */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+/* Garantir que o background e layout possam ocupar toda a altura da janela */
+html, body{
+    min-height: 100%;
+}
+
+body{
+    background: #e8f4ff;
+    color: #101828;
+}
