@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Pré-conexão ao Google Fonts para melhorar o carregamento da fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Estilos globais e do formulário de login -->
+    <link rel="stylesheet" href="src/css/geral.css">
+    <link rel="stylesheet" href="src/css/login.css">
+    
+    <title>hordiz</title>
+</head>
+<body>
+    <main>
+        <!-- Painel esquerdo com o formulário de login -->
+        <section class="login-panel">
+            <div class="panel-content">
+                <!-- Linha que junta logo e título. Alterar aqui para mudar o posicionamento da imagem e do texto -->
+                <div class="logo-heading-row">
+                    <h1>Bem-vindo ao</h1>
+                    <img src="/src/image/hordiz1.png" alt="hordiz logo" id="logo">
+                </div>
+                <p>Faça login para acessar sua conta e aproveitar nossos serviços.</p>
+                <form class="form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    <a href="/src/html/home.html" class="btn">Entrar</a>
+                    <p>Não tem uma conta? <a href="/src/html/register.html">Registre-se</a></p>
+                </form>
+            </div>
+        </section>
+        
+        <!-- Painel direito com o gradiente do site -->
+        <section class="hero-panel"></section>
+    </main>
+</body>
+</html>

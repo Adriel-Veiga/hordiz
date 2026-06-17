@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonte usada em todo o projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Estilos globais e específicos da home -->
+    <link rel="stylesheet" href="/src/css/geral.css">
+    <link rel="stylesheet" href="/src/css/home.css">
+
+    <title>hordiz</title>
+</head>
+<body>
+    <!-- Estrutura principal da página -->
+    <div class="app-shell">
+        <!-- Sidebar lateral -->
+        <aside class="sidebar">
+            <!-- Cabeçalho da sidebar -->
+            <header class="sidebar-header">
+                <img src="/src/image/semilogo.png" alt="hordiz logo" id="logo">
+                <button class="sidebar-toggle" aria-label="Abrir menu">☰</button>
+            </header>
+
+            <!-- Menu principal da navegação -->
+            <nav class="sidebar-nav">
+                <!-- Cada <details> vira um item principal do menu -->
+                <details class="menu-group" open>
+                    <summary>Configurações</summary>
+                    <ul class="submenu">
+                        <li><a href="#">Perfil</a></li>
+                        <li><a href="#">Segurança</a></li>
+                        <li><a href="#">Notificações</a></li>
+                    </ul>
+                </details>
+
+                <details class="menu-group">
+                    <summary>Projetos</summary>
+                    <ul class="submenu">
+                        <li><a href="#">Meus projetos</a></li>
+                        <li><a href="#">Novo projeto</a></li>
+                        <li><a href="#">Arquivos</a></li>
+                    </ul>
+                </details>
+
+                <details class="menu-group">
+                    <summary>Equipe</summary>
+                    <ul class="submenu">
+                        <li><a href="#">Membros</a></li>
+                        <li><a href="#">Convites</a></li>
+                        <li><a href="#">Relatórios</a></li>
+                    </ul>
+                </details>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo principal da página -->
+        <main class="content-area">
+            <header class="top-bar">
+                <h2>Dashboard</h2>
+                <a href="#" class="top-link">Ver relatório</a>
+            </header>
+
+            <section class="content-panel">
+                <h3>Bem-vindo de volta</h3>
+                <p>Você pode adicionar mais menus e submenus seguindo a mesma estrutura dos blocos acima.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
