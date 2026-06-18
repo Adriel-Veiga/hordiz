@@ -86,8 +86,7 @@ h1{
 }
 
 .btn,
-.form button,
-.form a[role="button"]{
+.form button{
     display: inline-block;
     text-align: center;
     text-decoration: none;
