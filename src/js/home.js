@@ -2,19 +2,20 @@
 const projetosIniciais = [
     {
         id: 1,
-        nome: "Hordiz",
+        nome: "Projeto Teste",
         tarefas: [
             { id: 1, titulo: "Criar cards de projeto", status: "concluido" },
-            { id: 2, titulo: "Estruturar localStorage", status: "fazendo" },
+            { id: 2, titulo: "Implementar funcionalidades", status: "fazendo" },
             { id: 3, titulo: "Criar página do quadro", status: "pendente" }
         ]
     },
     {
         id: 2,
-        nome: "TCC",
+        nome: "Rotina Teste",
         tarefas: [
-            { id: 1, titulo: "Levantamento de requisitos", status: "concluido" },
-            { id: 2, titulo: "Diagrama de casos de uso", status: "pendente" }
+            { id: 1, titulo: "Criar rotina de estudos", status: "concluido" },
+            {id: 2, titulo: "Fazer exercícios práticos", status: "fazendo" },
+            { id: 3, titulo: "Estudar JavaScript", status: "pendente" }
         ]
     }
 ]

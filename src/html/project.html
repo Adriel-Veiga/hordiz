@@ -15,22 +15,41 @@
 </head>
 <body>
     <main>
-        <h2 id="nome-projeto">Carregando...</h2>
+        <div class="project-layout">
+            <aside class="project-sidebar" id="project-sidebar">
+                <h4>Configurações</h4>
+                <ul>
+                    <li>Membros</li>
+                    <li>Arquivos</li>
+                    <li>Ajustes</li>
+                </ul>
+            </aside>
 
-        <div class="board-columns">
-    <div class="board-column" data-status="pendente">
-        <h3>Pendente</h3>
-        <div class="column-cards"></div>
-    </div>
-    <div class="board-column" data-status="fazendo">
-        <h3>Fazendo</h3>
-        <div class="column-cards"></div>
-    </div>
-    <div class="board-column" data-status="concluido">
-        <h3>Concluído</h3>
-        <div class="column-cards"></div>
+            <div class="project-content">
+                <header class="project-header">
+                    <button class="sidebar-toggle" id="btn-sidebar">☰</button>
+                    <img src="../image/semilogo.png" alt="hordiz logo" id="logo">
+                    <h2 id="nome-projeto">Carregando...</h2>
+                </header>
+
+                <div class="week-header"></div>
+
+                <div class="board-columns">
+                    <div class="board-column" data-status="pendente">
+                        <h3>Pendente</h3>
+                        <div class="column-cards"></div>
+                    </div>
+                    <div class="board-column" data-status="fazendo">
+                        <h3>Fazendo</h3>
+                        <div class="column-cards"></div>
+                    </div>
+                    <div class="board-column" data-status="concluido">
+                        <h3>Concluído</h3>
+                        <div class="column-cards"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
     </main>
 
     <script src="../js/project.js"></script>
