@@ -143,6 +143,39 @@ body {
   line-height: 1.6;
 }
 
+.task-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgb(18 33 68 / 0.08);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgb(18 33 68 / 0.12);
+}
+
+.project-card h4 {
+    color: #122144;
+    margin-bottom: 6px;
+}
+
+.project-card p {
+    color: #4b5a7a;
+    font-size: 0.9rem;
+}
+
 /* Responsividade para telas menores */
 @media (max-width: 900px) {
   .app-shell {

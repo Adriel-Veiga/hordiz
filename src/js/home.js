@@ -35,3 +35,28 @@ function carregarProjetos(){
 
 const projetos = carregarProjetos()
 console.log(projetos)
+
+// Seleciona o container onde os cards de projeto vão entrar
+const taskBoard = document.querySelector(".task-board")
+
+if(taskBoard){
+    projetos.forEach(function(projeto){
+        // Cria o card como um link real (<a>), não uma div
+        const card = document.createElement("a")
+        card.classList.add("project-card")
+        card.href = "project.html?id=" + projeto.id
+
+        // Título do projeto
+        const titulo = document.createElement("h4")
+        titulo.textContent = projeto.nome
+
+        // Quantidade de tarefas (informação extra, tipo o "6" que aparece no seu print do Trello)
+        const contagem = document.createElement("p")
+        contagem.textContent = projeto.tarefas.length + " tarefas"
+
+        card.appendChild(titulo)
+        card.appendChild(contagem)
+
+        taskBoard.appendChild(card)
+    })
+}
