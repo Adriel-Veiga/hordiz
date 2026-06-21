@@ -2,26 +2,38 @@
 const form = document.querySelector(".form")
 
 // Só roda se existir um formulário na página
-if(form){
-    form.addEventListener("submit", function(evento){
+if (form) {
+    form.addEventListener("submit", function (evento) {
         // Impede o comportamento padrão do form
         // (que seria recarregar a página)
         evento.preventDefault()
 
         // pega os valores dos campos do formulário
-        const email = document.querySelector("#email").value
-        const password = document.querySelector("#password").value
+        const email = document.querySelector("#email")?.value.trim() || ""
+        const password = document.querySelector("#password")?.value || ""
+        const confirmPassword = document.querySelector("#confirm_password")?.value || ""
 
         // validação
-        if(email === "" || password === ""){
+        if (email === "" || password === "") {
             alert("Preencha todos os campos")
             return
         }
-        if (password.length < 6){
+
+        if (password.length < 6) {
             alert("A senha deve conter no mínimo 6 caracteres")
             return
         }
 
-        window.location.href = "src/html/home.html"
+        if (confirmPassword !== "" && password !== confirmPassword) {
+            alert("As senhas não coincidem")
+            return
+        }
+
+        const currentPath = window.location.pathname
+        const targetPath = currentPath.includes("/src/html/") || currentPath.endsWith("/register.html")
+            ? "home.html"
+            : "src/html/home.html"
+
+        window.location.href = targetPath
     })
 }
