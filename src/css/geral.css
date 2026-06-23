@@ -1,7 +1,7 @@
 :root{
     /* Variáveis de tema usadas em todo o site */
     --fonte: 'Open Sans', sans-serif;
-    --cor-primaria: #fff5d3;
+    --cor-primaria: #ffffff;
     --cor-secundaria: #6687ff;
     --cor-terciaria: #465fbd;
     --gradiente: linear-gradient(90deg, var(--cor-secundaria), var(--cor-terciaria));
@@ -13,6 +13,7 @@ body.dark {
     --cor-primaria: #0f172a;
     --cor-secundaria: #2563eb;
     --cor-terciaria: #4f46e5;
+    --cor-task: #1e293b;
     --gradiente: linear-gradient(90deg, var(--cor-terciaria), var(--cor-secundaria));
     --gradiente-inversa: linear-gradient(90deg, var(--cor-secundaria), var(--cor-terciaria));
     background: #020617;
@@ -36,5 +37,7 @@ body{
     background: #e8f4ff;
     color: #101828;
 }
+
+
 
 
