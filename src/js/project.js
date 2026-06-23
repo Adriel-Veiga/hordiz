@@ -24,6 +24,11 @@ if(projetoAtual){
 const botaoSidebar = document.querySelector("#btn-sidebar")
 const sidebar = document.querySelector("#project-sidebar")
 
+const savedTheme = localStorage.getItem("hordiz-theme")
+if (savedTheme !== null) {
+    document.body.classList.toggle("dark", savedTheme === "dark")
+}
+
 if(botaoSidebar && sidebar){
     botaoSidebar.addEventListener("click", function(){
         sidebar.classList.toggle("sidebar-aberta")
