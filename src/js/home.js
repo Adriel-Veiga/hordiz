@@ -1,4 +1,4 @@
-// Dados iniciais, usados só na primeira vez que o site rodar
+// Dados iniciais, usados só na primeira vez que o site roda
 const projetosIniciais = [
     {
         id: 1,
