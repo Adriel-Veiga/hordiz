@@ -115,6 +115,28 @@ body {
   font-weight: 600;
 }
 
+.theme-toggle-btn {
+  width: 100%;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: #eef3ff;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateX(2px);
+}
+
+body.dark .theme-toggle-btn {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 /* Card principal da home */
 .content-panel {
   background: #fff;
@@ -165,6 +187,21 @@ body {
 .project-card p {
     color: #4b5a7a;
     font-size: 0.9rem;
+}
+
+body.dark .content-area {
+  background: #020617;
+}
+
+body.dark .top-bar h2,
+body.dark .project-card h4,
+body.dark .project-card p {
+  color: #e2e8f0;
+}
+
+body.dark .project-card {
+  background: #111827;
+  box-shadow: 0 12px 28px rgb(15 23 42 / 0.35);
 }
 
 /* Responsividade para telas menores */

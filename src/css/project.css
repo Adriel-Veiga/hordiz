@@ -8,10 +8,11 @@
 .project-sidebar {
     width: 0;
     overflow: hidden;
-    background: var(--gradiente);
+    background: var(--gradiente-inversa);
     color: #fff;
     transition: width 0.25s ease;
     flex-shrink: 0;
+    border-radius: 20px 0px 20px 0px;
 }
 
 .project-sidebar.sidebar-aberta {

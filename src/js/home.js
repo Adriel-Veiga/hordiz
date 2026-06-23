@@ -61,3 +61,25 @@ if(taskBoard){
         taskBoard.appendChild(card)
     })
 }
+
+const themeToggleButton = document.getElementById("theme-toggle")
+const savedTheme = localStorage.getItem("hordiz-theme")
+
+function updateTheme(theme) {
+    const isDark = theme === "dark"
+    document.body.classList.toggle("dark", isDark)
+    if (themeToggleButton) {
+        themeToggleButton.textContent = isDark ? "Modo claro" : "Modo escuro"
+    }
+}
+
+if (themeToggleButton) {
+    const initialTheme = savedTheme || "light"
+    updateTheme(initialTheme)
+
+    themeToggleButton.addEventListener("click", function () {
+        const nextTheme = document.body.classList.contains("dark") ? "light" : "dark"
+        localStorage.setItem("hordiz-theme", nextTheme)
+        updateTheme(nextTheme)
+    })
+}

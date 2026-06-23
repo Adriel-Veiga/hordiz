@@ -5,6 +5,18 @@
     --cor-secundaria: #6687ff;
     --cor-terciaria: #465fbd;
     --gradiente: linear-gradient(90deg, var(--cor-secundaria), var(--cor-terciaria));
+    --gradiente-inversa:  linear-gradient(90deg, var(--cor-terciaria), var(--cor-secundaria));
+}
+
+body.dark {
+    /* Variáveis tema escuro*/
+    --cor-primaria: #0f172a;
+    --cor-secundaria: #2563eb;
+    --cor-terciaria: #4f46e5;
+    --gradiente: linear-gradient(90deg, var(--cor-terciaria), var(--cor-secundaria));
+    --gradiente-inversa: linear-gradient(90deg, var(--cor-secundaria), var(--cor-terciaria));
+    background: #020617;
+    color: #e2e8f0;
 }
 
 /* Reset básico e aplicação da fonte global */
@@ -24,3 +36,5 @@ body{
     background: #e8f4ff;
     color: #101828;
 }
+
+
