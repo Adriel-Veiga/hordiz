@@ -36,16 +36,17 @@ main{
 }
 
 #logo{
-    height: 80px;
-    width: auto;
-    display: inline-block;
+    width: 165px;
+    height: 165px;
+   object-fit: contain;
+   display: block;
 
-    
 }
 
 .logo-heading-row{
     display: flex;
     align-items: center;
+
 
     /* Exibe o título e a imagem lado a lado */
 }
@@ -82,7 +83,8 @@ h1{
     border: 1px solid #d1d5db;
     border-radius: 0.75rem;
     width: 100%;
-    background: #fff;
+    background:var(--cor-primaria);
+    color:var(--color);
 }
 
 .btn,
