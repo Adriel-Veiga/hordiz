@@ -1,3 +1,10 @@
+// Aplica tema persistente, se houver
+const savedTheme = localStorage.getItem("hordiz-theme")
+if (savedTheme !== null) {
+    document.body.classList.toggle("dark", savedTheme === "dark")
+
+}
+
 // Seleciona o formulário da página atual
 const form = document.querySelector(".form")
 
